@@ -118,7 +118,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
             var charCount = text.length;
             element.textContent = text;
             element.style.width = `${charCount * 2}ch`;
-            element.style.animation = `typing ${charCount * 0.001}s steps(${charCount}), caret 1s steps(1) infinite`;
+            element.style.animation = `typing ${charCount * 0.1}s steps(${charCount}), caret 1s steps(1) infinite`;
             element.addEventListener('animationend', function() {
                 element.style.borderRight = 'none'; // 移除光標動畫
                 resolve();
